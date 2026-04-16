@@ -609,26 +609,17 @@ def main():
     # check_requirements(ROOT / "requirements.txt", exclude=("tensorboard", "thop"))
     # run(**vars(opt))
     run(
-        # source='./img_list_test_label.txt',
-        source='./runs/detect/260318_nonMoto_vehicle/crops/motorperson',
-        # source = '/data/workspace/wangyuqi/Datasets/nonMoto_vehicle/nonMoto_vehicle_imgs_label',
-        # weights='./trained_model/park_det/2025-12-12(清华校园)/parkDet.onnx',
-        weights='./trained_model/car_face_det/v5s_256x256_1b.onnx',
-        # weights='./trained_model/car_face_det/1/v5s_416x416.onnx',
-        # weights='./trained_model/yolov5s-plate-detect.pt',
-        data='./non-motor-person.yaml',
-        # data='./nonMoto.yaml',
-        # data='./plate_det.yaml',
+        source='',
+        weights='.onnx',
+        data='.yaml',
         conf_thres=0.4,
         imgsz=(256, 256),
-        # imgsz=(416, 416),
-        # imgsz=(640, 640),
         save_conf=True,
         # save_crop=True,
         project='./runs/detect',
         name='260327_plate_det',
         save_csv=True,
-        rec_weights='./trained_model/CRNN_2026_3_27_11_55_19_simRealFusion_style2000/best.pth',
+        rec_weights='best.pth',
         # save_txt=True,
         device="7"
 
