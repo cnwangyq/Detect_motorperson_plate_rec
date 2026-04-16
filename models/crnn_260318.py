@@ -205,8 +205,8 @@ if __name__ == '__main__':
     print(len(alphabet))
     converter = strLabelConverter(alphabet)
 
-    image = '../sample/莆田52K23_processed.jpg'
-    # image = '../sample/川B003GV_国道G324埭里卡口往市区-1_20260305124326_0_92_02.jpg'
+    image = '_processed.jpg'
+    # image = '.jpg'
     image = Image.open(image)
     image = image.convert('L')
     transformer = transforms.Compose([
